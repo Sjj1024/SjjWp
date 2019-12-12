@@ -802,7 +802,7 @@ switch ($action) {
         ?>
         <form name="registerform" id="registerform" action="<?php echo esc_url( site_url( 'wp-login.php?action=register', 'login_post' ) ); ?>" method="post" novalidate="novalidate">
             <p>
-                <label for="user_login"><?php _e('用户名：') ?><br />
+                <label for="user_login"><?php _e('用户名：（中文不要超过5个字，别的随意）') ?><br />
                     <input type="text" name="user_login" id="user_login" class="input" value="<?php echo esc_attr(wp_unslash($user_login)); ?>" size="20" /></label>
             </p>
             <p>
@@ -1002,7 +1002,7 @@ switch ($action) {
             ?>
             <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_html_e( 'Remember Me' ); ?></label></p>
             <p class="submit">
-                <input type="submit" name="wp-submit" id="wp-submit" style="width: 272px;height: 40px;margin-top: 10px;" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
+                <input type="submit" name="wp-submit" id="wp-submit" style="width: 272px;height: 40px;margin-top: 16px;" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
                 <?php	if ( $interim_login ) { ?>
                     <input type="hidden" name="interim-login" value="1" />
                 <?php	} else { ?>
