@@ -31,7 +31,7 @@ global $hook_suffix;
 	?>
 	<p id="footer-left" class="alignleft">
 		<?php
-		$text = sprintf( __( 'Thank you for creating with <a href="%s">WordPress</a>.' ), __( 'https://wordpress.org/' ) );
+		$text = sprintf( __( '感谢使用 <a href="%s">小神系统</a>.' ), __( 'https://1024shen.com/' ) );
 		/**
 		 * Filters the "Thank you" text displayed in the admin footer.
 		 *
@@ -56,7 +56,7 @@ global $hook_suffix;
 		 *
 		 * @param string $content The content that will be printed.
 		 */
-		echo apply_filters( 'update_footer', '' );
+		echo "1.0版本";
 		?>
 	</p>
 	<div class="clear"></div>
